@@ -1,0 +1,149 @@
+
+
+.pesquisa {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 60px;
+}
+
+.botaoPesquisar {
+    background-color: #ffb800;
+    width: 200px;
+    height: 60px;
+    border-radius: 30px;
+    border: solid 3px black;
+    font-weight: bold;
+    font-size: 1.3em;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px black;
+    outline: none;
+}
+
+.barraPesquisa, .barraPesquisaFeitico {
+    background-color: #d5c678;
+    width: 70vw;
+    border-radius: 100px;
+    padding-left: 20px;
+    border: solid 3px black;
+    font-size: 1.3em;
+    color: black;
+    font-weight: bold;
+    outline: none;
+}
+
+
+
+.barraPesquisa::-webkit-input-placeholder {
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.filtro {
+    width: calc(90% - 100px);
+    margin: 50px 5%;
+    background-color: #d5c678;
+    padding: 10px 50px;
+    border-radius: 30px;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.5);
+}
+
+.filtro p {
+    text-align: center;
+}
+
+.filtro input {
+    margin-right: 10px;
+}
+
+.botaoFiltrar {
+    width: 100px;
+    padding: 5px 10px;
+    margin: 15px 0;
+    background-color: #ffb800;
+    font-weight: bold;
+    border-radius: 100px;
+    border: solid 2px black;
+    cursor: pointer;
+    outline: none;
+}
+
+.divMaiorLista {
+    width: 90%;
+    height: 80vh;
+    margin: 5%;
+    background-color: #d5c678;
+    border-radius: 30px;
+    padding-top: 2%;
+    padding-bottom: 5%;
+}
+
+.divMenorLista {
+    width: 95%;
+    height: 70vh;
+    margin: 2%;
+    border: solid 3px black;
+    border-radius: 30px;
+    overflow: scroll;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 30%);
+    grid-gap: 30px;
+    padding-bottom: 5%;
+}
+
+.divMenorLista::-webkit-scrollbar {
+    display: none;
+}
+
+
+.cardPersonagem{
+
+    margin: 0% 5% 5%;
+    background-color: #8E7F30;
+    width: 100%;
+    margin-top: 30px;
+    list-style: none;
+    border-radius: 15px;
+    display: block;
+}
+
+.cardPersonagem li {
+    margin-top: 3px;
+    margin-left: 10px;
+    font-size: 1em;
+    max-width: 90%;
+
+}
+/* 
+.nome {
+    padding-top: 10px;
+}
+
+.animagus {
+    margin-bottom: 10px;
+} */
+
+ 
+
+.cabecalhoCard, .footerCard {
+    height: 50px;
+    background-color: #59522A;
+}
+
+.cabecalhoCard {
+   
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 5px 0;
+}
+
+.footerCard {
+    margin-top: 10px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    position: relative;
+    bottom: -1.3em;
+
+}
+
+
+

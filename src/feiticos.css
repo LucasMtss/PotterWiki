@@ -1,0 +1,62 @@
+
+.barraPesquisaFeitico::-webkit-input-placeholder {
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+
+.divMaiorListaFeitico {
+    width: 90%;
+    height: 80vh;
+    margin: 5%;
+    background-color: #d5c678;
+    border-radius: 30px;
+    padding-top: 2%;
+}
+
+.divMenorListaFeitico {
+    width: 95%;
+    height: 70vh;
+    margin: 2%;
+    border: solid 3px black;
+    border-radius: 30px;
+    overflow: scroll;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    columns: 2;
+    align-items: center;
+
+}
+
+.divMenorListaFeitico::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+.cardFeitico{
+    margin: 0% 5% 5%;
+    background-color: #8E7F30;
+    width: 80%;
+    margin-top: 30px;
+    list-style: none;
+    border-radius: 15px;
+    display: block;
+}
+
+.cardFeitico li {
+    margin-top: 3px;
+    margin-left: 10px;
+    font-size: 1em;
+    max-width: 90%;
+}
+
+
+
+.pocao {
+    display: inline-block;
+    font-size: inherit;
+    height: 1em;
+    overflow: visible;
+}
+
