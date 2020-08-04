@@ -152,7 +152,7 @@ function Feiticos() {
         }
         else
             setArrayFeiticos(feiticoAll)
-        console.log('array', arrayFeiticos)
+
     }
 
 
