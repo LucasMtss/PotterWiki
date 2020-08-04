@@ -16,7 +16,7 @@ function App() {
   return (
     <Router>
       <div className='app'>
-        <img src={logo} />
+        <img src={logo} className='logoPrincipal' />
 
         <Navegacao />
 

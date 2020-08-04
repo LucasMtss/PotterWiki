@@ -146,4 +146,31 @@
 }
 
 
+@media (max-width: 800px) {
+    .root {
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+    }
+    .pesquisa {
+        width: calc(100vw - 10px);
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .barraPesquisa {
+        margin-top: 30px;
+        height: 60px;
+    }
+
+    .botaoPesquisar {
+        margin-top: 30px;
+    }
+
+    .filtro {
+        margin: 0 5vw;
+        width: 90vw;
+    }
+}
+
 
