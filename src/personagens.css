@@ -181,6 +181,8 @@
         width: 80%;
         margin: 10px auto;
         font-size: 1.2em;
+        height: 600px;
+        padding-bottom: 30px;
     }
 
     .cabecalhoCard {
