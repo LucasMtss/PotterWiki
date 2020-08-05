@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import '../../src/feiticos.css'
 import brasao from '../images/brasão.png';
-
+import Navegacao from './Navegacao';
+import logo from '../images/Logo_Curiosidades_Magicas.png';
 
 function Feiticos() {
 
@@ -38,7 +39,7 @@ function Feiticos() {
         let array = []
 
         for (var i = 0; i < res.data.length; i++) {
-            array.push(<ul className='cardFeitico'><div className='cabecalhoCard' ><img src={brasao} /></div> <li> <strong>Name: {res.data[i].spell} </strong></li><li>Type: {res.data[i].type} </li><li>Effect: {res.data[i].effect}</li><div className='footerCard'></div></ul>)
+            array.push(<ul className='cardFeitico'><div className='cabecalhoCard' ><img src={brasao} /></div> <li> <strong><u>Name: </u>{res.data[i].spell} </strong></li><li><u>Type: </u>{res.data[i].type} </li><li><u>Effect: </u>{res.data[i].effect}</li><div className='footerCard'></div></ul>)
         }
 
 
@@ -73,7 +74,7 @@ function Feiticos() {
     function montaCards(array) {
         let arrayCards = []
         for (var i = 0; i < array.length; i++) {
-            arrayCards.push(<ul className='cardFeitico'><div className='cabecalhoCard' ><img src={brasao} /></div> <li> <strong>Name: {array[i].spell} </strong></li><li>Type: {array[i].type} </li><li>Effect: {array[i].effect}</li><div className='footerCard'></div></ul>)
+            arrayCards.push(<ul className='cardFeitico'><div className='cabecalhoCard' ><img src={brasao} /></div> <li> <strong><u>Name: </u>{array[i].spell} </strong></li><li><u>Type: </u>{array[i].type} </li><li><u>Effect: </u>{array[i].effect}</li><div className='footerCard'></div></ul>)
         }
         return arrayCards
     }
@@ -83,14 +84,14 @@ function Feiticos() {
         let array = []
         if (pesquisaFeitico == '') {
             for (var i = 0; i < dadosFeiticos.length; i++) {
-                array.push(<ul className='cardFeitico'><div className='cabecalhoCard' ><img src={brasao} /></div> <li> <strong>Name: {dadosFeiticos[i].spell} </strong></li><li>Type: {dadosFeiticos[i].type} </li><li>Effect: {dadosFeiticos[i].effect}</li><div className='footerCard'></div></ul>)
+                array.push(<ul className='cardFeitico'><div className='cabecalhoCard' ><img src={brasao} /></div> <li> <strong><u>Name: </u>{dadosFeiticos[i].spell} </strong></li><li><u>Type: </u>{dadosFeiticos[i].type} </li><li><u>Effect: </u>{dadosFeiticos[i].effect}</li><div className='footerCard'></div></ul>)
             }
             setArrayFeiticos(array)
         } else {
 
             let feitico = pessquisaParteDoNome(pesquisaFeitico)
             let indice = nomesFeiticos.indexOf(feitico)
-            array.push(<ul className='cardFeitico'><div className='cabecalhoCard' ><img src={brasao} /></div> <li> <strong>Name: {dadosFeiticos[indice].spell} </strong></li><li>Type: {dadosFeiticos[indice].type} </li><li>Effect: {dadosFeiticos[indice].effect}</li><div className='footerCard'></div></ul>)
+            array.push(<ul className='cardFeitico'><div className='cabecalhoCard' ><img src={brasao} /></div> <li> <strong><i>Name: </i>{dadosFeiticos[indice].spell} </strong></li><li><i>Type: </i>{dadosFeiticos[indice].type} </li><li><i>Effect: </i>{dadosFeiticos[indice].effect}</li><div className='footerCard'></div></ul>)
             setArrayFeiticos(array)
         }
     }
@@ -160,6 +161,8 @@ function Feiticos() {
     return (
 
         <div>
+            <img src={logo} className='logo' />
+            <Navegacao botoes={['Spells', 'Home', 'Houses']} links={['/Spells', '/Home', '/Houses']} />
             <div className='pesquisa'>
                 <input className='barraPesquisaFeitico' placeholder='Spell Name' onChange={mudaNome} />
                 <button className='botaoPesquisar' onClick={pesquisaNome}>Search</button>

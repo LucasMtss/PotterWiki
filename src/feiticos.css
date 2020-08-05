@@ -1,3 +1,8 @@
+.app {
+    background: #530000;
+   
+}
+
 
 .barraPesquisaFeitico::-webkit-input-placeholder {
     font-weight: bold;
@@ -36,8 +41,10 @@
 
 .cardFeitico{
     margin: 0% 5% 5%;
+    height: 80%;
     background-color: #8E7F30;
     width: 80%;
+    padding-bottom: 30px;
     margin-top: 30px;
     list-style: none;
     border-radius: 15px;
@@ -60,3 +67,23 @@
     overflow: visible;
 }
 
+@media (max-width: 800px) {
+    .barraPesquisaFeitico {
+        height: 60px;
+    }
+
+    .cardFeitico {
+        width: 35%;
+        height: 35%;
+        line-height: 1.5em;
+    }
+
+    .divMenorListaFeitico {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+    
+}

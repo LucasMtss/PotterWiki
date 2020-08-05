@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import Navegacao from './Navegacao';
 
-function Casas() {
+function Casas(props) {
 
     const [dadosCasas, setDadosCasas] = useState(false);
 
@@ -65,6 +66,7 @@ function Casas() {
 
     return (
         <div>
+
             <h3> Casas </h3>
             <hr />
             <dl>

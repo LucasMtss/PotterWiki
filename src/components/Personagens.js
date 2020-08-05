@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import '../../src/personagens.css'
 import brasao from '../images/brasão.png';
-
-
+import Navegacao from './Navegacao';
+import logo from '../images/Logo_Curiosidades_Magicas.png';
 
 function Personagem() {
 
@@ -149,6 +149,8 @@ function Personagem() {
 
     return (
         <div>
+            <img src={logo} className='logo' />
+            <Navegacao botoes={['Spells', 'Home', 'Houses']} links={['/Spells', '/Home', '/Houses']} />
             <div className='pesquisa'>
                 <input className='barraPesquisa' placeholder='Character name' onChange={mudaNome} />
                 <button className='botaoPesquisar' onClick={pesquisaNome}>Pesquisar</button>
