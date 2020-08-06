@@ -1,4 +1,6 @@
-
+.personagens {
+    width: 100%;
+}
 
 .pesquisa {
     display: flex;
@@ -139,11 +141,7 @@
 
 @media (max-width: 800px) {
     
-    .app {
-        margin: 0;
-        padding: 0;
-        align-content: center;
-    }
+  
     
     .pesquisa {
         width: calc(100vw - 10px);
@@ -159,6 +157,12 @@
     .botaoPesquisar {
         margin: 30px 0;
     }
+
+    .barraPesquisa::-webkit-input-placeholder {
+        font-weight: bold;
+        font-size: 1em;
+    }
+    
 
     .filtro {
         justify-self: center;

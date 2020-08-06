@@ -1,6 +1,10 @@
+.feiticos {
+    width: 100%;
+}
+
 .app {
     background: #530000;
-   
+    width: 100vw;
 }
 
 
@@ -72,9 +76,14 @@
         height: 60px;
     }
 
+    .barraPesquisaFeitico::-webkit-input-placeholder {
+        font-weight: bold;
+        font-size: 1em;
+    }
+
     .cardFeitico {
-        width: 35%;
-        height: 35%;
+        width: 60%;
+        height: 50%;
         line-height: 1.5em;
     }
 

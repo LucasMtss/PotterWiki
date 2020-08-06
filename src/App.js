@@ -4,7 +4,7 @@ import Navegacao from './components/Navegacao';
 import './index.css'
 
 import carta from './images/carta.png';
-import logo from './images/Logo_Curiosidades_Magicas.png';
+import logo from './images/logoEditada.png';
 
 
 

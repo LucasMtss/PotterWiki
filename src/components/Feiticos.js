@@ -3,7 +3,7 @@ import axios from 'axios';
 import '../../src/feiticos.css'
 import brasao from '../images/brasão.png';
 import Navegacao from './Navegacao';
-import logo from '../images/Logo_Curiosidades_Magicas.png';
+import logo from '../images/logoEditada.png';
 
 function Feiticos() {
 
@@ -160,9 +160,9 @@ function Feiticos() {
 
     return (
 
-        <div>
+        <div className='feiticos'>
             <img src={logo} className='logo' />
-            <Navegacao botoes={['Spells', 'Home', 'Houses']} links={['/Spells', '/Home', '/Houses']} />
+            <Navegacao botoes={['Characters', 'Home', 'Houses']} links={['/Characters', '/Home', '/Houses']} />
             <div className='pesquisa'>
                 <input className='barraPesquisaFeitico' placeholder='Spell Name' onChange={mudaNome} />
                 <button className='botaoPesquisar' onClick={pesquisaNome}>Search</button>

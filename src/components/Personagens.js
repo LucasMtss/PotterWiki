@@ -3,7 +3,8 @@ import axios from 'axios';
 import '../../src/personagens.css'
 import brasao from '../images/brasão.png';
 import Navegacao from './Navegacao';
-import logo from '../images/Logo_Curiosidades_Magicas.png';
+import logo from '../images/logoEditada.png';
+import '../personagens.css';
 
 function Personagem() {
 
@@ -148,7 +149,7 @@ function Personagem() {
     }
 
     return (
-        <div>
+        <div className='personagens'>
             <img src={logo} className='logo' />
             <Navegacao botoes={['Spells', 'Home', 'Houses']} links={['/Spells', '/Home', '/Houses']} />
             <div className='pesquisa'>
@@ -172,6 +173,7 @@ function Personagem() {
             </div>
 
             <div className='divMaiorLista'>
+                <p>* Alguns personagens possuem campos vazios pois as informações são desconhecidas ou inexistentes.</p>
                 <div className='divMenorLista'>
 
                     {
