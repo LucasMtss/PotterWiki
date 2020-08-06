@@ -173,7 +173,6 @@ function Personagem() {
             </div>
 
             <div className='divMaiorLista'>
-                <p>* Alguns personagens possuem campos vazios pois as informações são desconhecidas ou inexistentes.</p>
                 <div className='divMenorLista'>
 
                     {
