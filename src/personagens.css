@@ -54,6 +54,7 @@
 
 .filtro p {
     text-align: center;
+    margin-bottom: 30px;
 }
 
 .filtro input {
@@ -138,6 +139,39 @@
     display: none;
 }
 
+#Gryffindor {
+    background-color: #ca1b00;
+}
+
+#Gryffindor #Gryffindor {
+    background-color: #b88b1c;
+}
+
+#Ravenclaw {
+    background-color: #140085;
+    color: white;
+}
+
+#Ravenclaw #Ravenclaw {
+    background-color: #b4987c;
+}
+
+#Slytherin {
+    background-color: #007514;
+}
+
+#Slytherin #Slytherin {
+    background-color: #949393;
+}
+
+#Hufflepuff {
+    background-color: #ffee00;
+}
+
+#Hufflepuff #Hufflepuff {
+    background-color: #000000;
+}
+
 
 @media (max-width: 800px) {
     
@@ -185,7 +219,7 @@
         width: 80%;
         margin: 10px auto;
         font-size: 1.2em;
-        height: 600px;
+        height: 750px;
         padding-bottom: 30px;
     }
 

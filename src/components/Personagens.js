@@ -69,14 +69,17 @@ function Personagem() {
                     arrayCasa.push(dadosPersonagens[i])
             }
         }
-        return arrayCasa
+        let retorno = { casa, array }
+        retorno.casa = casa
+        retorno.array = arrayCasa
+        return retorno
     }
 
     // Função para montar um array com cards de personagens de cada casa
-    function montaCardsPersonagens(array) {
+    function montaCardsPersonagens(obj) {
         let arrayCards = []
-        for (let i = 0; i < array.length; i++)
-            arrayCards.push(<ul className='cardPersonagem'><div className='cabecalhoCard' ><img src={brasao} /></div><li className='nome'><strong><u>Nome:</u> {array[i].name}</strong></li><li><u>House: </u>{array[i].house}</li><li><u>Blood status: </u>{array[i].bloodStatus}</li><li><u>Boogart: </u>{array[i].boogart}</li><li><u>Death eater: </u>{array[i].deathEater}</li><li><u>Dumbledore's army: </u>{array[i].dumbledoresArmy}</li><li><u>Ministry of magic: </u>{array[i].ministryOfMagic}</li><li><u>Order of the Phoenix: </u>{array[i].orderOfThePhoenix}</li><li><u>Patronus: </u>{array[i].patronus}</li><li><u>Role: </u>{array[i].role}</li><li><u>School: </u>{array[i].school}</li><li><u>Species: </u>{array[i].species}</li><li><u>Alias: </u>{array[i].alias}</li><li><u>Wand: </u>{array[i].wand}</li><li className='animagus'><u>Animagus: </u>{array[i].animagus}</li><div className='footerCard'></div></ul >)
+        for (let i = 0; i < obj.array.length; i++)
+            arrayCards.push(<ul className='cardPersonagem' id={obj.casa}><div className='cabecalhoCard' id={obj.casa}><img src={brasao} /></div><li className='nome'><strong><u>Nome:</u> {obj.array[i].name}</strong></li><li><u>House: </u>{obj.array[i].house}</li><li><u>Blood status: </u>{obj.array[i].bloodStatus}</li><li><u>Boogart: </u>{obj.array[i].boogart}</li><li><u>Death eater: </u>{obj.array[i].deathEater}</li><li><u>Dumbledore's army: </u>{obj.array[i].dumbledoresArmy}</li><li><u>Ministry of magic: </u>{obj.array[i].ministryOfMagic}</li><li><u>Order of the Phoenix: </u>{obj.array[i].orderOfThePhoenix}</li><li><u>Patronus: </u>{obj.array[i].patronus}</li><li><u>Role: </u>{obj.array[i].role}</li><li><u>School: </u>{obj.array[i].school}</li><li><u>Species: </u>{obj.array[i].species}</li><li><u>Alias: </u>{obj.array[i].alias}</li><li><u>Wand: </u>{obj.array[i].wand}</li><li className='animagus'><u>Animagus: </u>{obj.array[i].animagus}</li><div className='footerCard'></div></ul >)
         return arrayCards
     }
 
