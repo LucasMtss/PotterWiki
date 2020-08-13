@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import Navegacao from './Navegacao';
+import Navegacao from '../../Components/Navegacao';
 
 function Casas(props) {
 

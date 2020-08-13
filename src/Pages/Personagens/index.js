@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import '../../src/personagens.css'
-import brasao from '../images/brasão.png';
-import Navegacao from './Navegacao';
-import logo from '../images/logoEditada.png';
-import '../personagens.css';
+import brasao from '../../images/brasão.png';
+import Navegacao from '../../Components/Navegacao';
+import logo from '../../images/logoEditada.png';
+import './personagens.css';
 
 function Personagem() {
 

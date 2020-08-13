@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import '../../src/feiticos.css'
-import brasao from '../images/brasão.png';
-import Navegacao from './Navegacao';
-import logo from '../images/logoEditada.png';
+import './feiticos.css'
+import brasao from '../../images/brasão.png';
+import Navegacao from '../../Components/Navegacao';
+import logo from '../../images/logoEditada.png';
 
 function Feiticos() {
 

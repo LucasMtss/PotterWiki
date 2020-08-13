@@ -1,3 +1,10 @@
+# PotterWiki
+
+    Um pequeno site que funciona como uma wiki da saga de Harry Potter.
+Esse projeto tem como foco trabalhar as habilidades com React.js, APIs com axios, HTML5, CSS3, JavaScript, JSX, entre outras ferramentas.
+    O código do site está sob constantes alterações, tentando colocar em prática todo o aprendizado dee novas habilidaades bibliotecas e frameworks.
+
+
 <<<<<<< HEAD
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -68,7 +75,5 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 =======
-# PotterWiki
-Um pequeno site que funciona como uma wiki da saga de Harry Potter.
-Esse projeto tem como foco trabalhar as habilidades com React.js, APIs com axios, HTML5, CSS3, JavaScript, JSX, entre outras ferramentas.
+
 >>>>>>> 15adc68b946d4124df905058dc9afb444fb843f5

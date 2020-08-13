@@ -1,14 +1,11 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Navegacao from './components/Navegacao';
-import './index.css'
+import Navegacao from '../../Components/Navegacao';
+import './home.css'
 
-import carta from './images/carta.png';
-import logo from './images/logoEditada.png';
+import carta from '../../images/carta.png';
+import logo from '../../images/logoEditada.png';
 
-
-
-function App() {
+function Home() {
 
   return (
 
@@ -18,11 +15,10 @@ function App() {
       <h1 className='titulo'>Torne-se um bruxo!</h1>
       <img className='carta' src={carta} />
 
-
     </div>
 
 
   )
 }
 
-export default App;
+export default Home;

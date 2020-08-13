@@ -1,0 +1,29 @@
+.navegacao{
+    width: 90%;
+    height: auto;
+    margin: auto;
+    justify-content: space-around;
+    font-size: 1.5em;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.links {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    background-color: #ffb800;
+    border: solid 3px black;
+    padding: 10px 20px;
+    width: 30%;
+    text-align: center;
+    border-radius: 20px;
+}
+
+@media (max-width: 800px) {
+
+    .links {
+        width: 70%;
+        margin-bottom: 10px;
+    }
+}
